@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Website Checker",
+  "version": "0.2.0",
+  "description": "Alt 키와 함께 링크를 가리키면 구조화된 URL 정보를 표시합니다.",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content.js"],
+      "css": ["tooltip.css"]
+    }
+  ]
+}
+ 

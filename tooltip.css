@@ -1,0 +1,12 @@
+/* 실제 카드 스타일은 사이트 CSS와 격리하기 위해 content.js의 Shadow DOM 안에 있다. */
+.website-checker-tooltip-host {
+  all: initial;
+  position: fixed;
+  z-index: 2147483647;
+  display: block;
+  pointer-events: none;
+  max-width: calc(100vw - 16px);
+  max-height: calc(100vh - 16px);
+  margin: 0;
+  padding: 0;
+}
